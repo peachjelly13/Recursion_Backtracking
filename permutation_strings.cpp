@@ -13,7 +13,7 @@ void solve(string input, string output,vector<string>&v){
     for(int i = 0;i<input.size();i++){
         if(map_.find(input[i])==map_.end()){
             map_[input[i]]++;
-        
+
             string newinput = input.substr(0,i)+input.substr(i+1);
             string newoutput = output+input[i];
             solve(newinput,newoutput,v);
